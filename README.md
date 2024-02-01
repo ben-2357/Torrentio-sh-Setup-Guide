@@ -10,7 +10,7 @@
 
 ### ⚠️ BE SURE TO COPY AND PASTE THE BLOCKS OF COMMANDS 1 BLOCK AT A TIME AND WAIT BEFORE EACH ONE IS DONE BEFORE STARTING ANOTHER ⚠️
 
-Add the Docker apt repository or see the [Docker installation guide](https://docs.docker.com/engine/install/ubuntu/).
+Add the Docker apt repository or see the [Docker installation guide](https://docs.docker.com/engine/install/ubuntu/) on Docker's website.
 
 ```bash
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
