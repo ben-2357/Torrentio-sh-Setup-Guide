@@ -10,9 +10,10 @@
 
 ### ⚠️ BE SURE TO COPY AND PASTE THE BLOCKS OF COMMANDS 1 BLOCK AT A TIME AND WAIT BEFORE EACH ONE IS DONE BEFORE STARTING ANOTHER ⚠️
 
-Add the Docker apt repository
+Add the Docker apt repository or see the [Docker installation guide](https://docs.docker.com/engine/install/ubuntu/).
 
 ```bash
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 sudo apt-get update
 sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
