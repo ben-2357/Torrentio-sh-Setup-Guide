@@ -8,7 +8,7 @@
  
  3. A [DuckDNS](https://www.duckdns.org/) account with ports 80 TCP and 443 TCP forwarded on your router. [Here's a great video tutorial](https://www.youtube.com/watch?v=B9jH8QPsVOw). ****Note: This is only required for remote access outside of your home wifi.****
  
- 4. About 15-30 minutes excluding the time installing Linux takes 
+ 4. Patience lol
 
 ## Install Docker (simply copy and paste the commands)
 
@@ -79,12 +79,22 @@ docker-compose up -d
 [Here's a great video tutorial.](https://www.youtube.com/watch?v=B9jH8QPsVOw)
 
 ### Next setup the reverse proxy. 
-This is what sends Torrentio-sh uses to talk to other devices across the internet. We will use Caddy.
+This is what sends Torrentio-sh uses to talk to other devices across the internet. We will use Caddy as a reverse proxy.
 
 Start by downloading the caddy docker-compose.yaml file and starting the stack
 ```bash
 cd ~
-mkdir caddy
-cd caddy
-wget 
+git clone https://github.com/ben-2357/Torrentio-sh-Setup-Guide
+mv ~/Torrentio-sh-Setup-Guide/Caddy ~/Caddy
+sudo rm -r Torrentio-sh-Setup-Guide
 ```
+Replace ```subdomain.duckdns.org``` ,with your previously chosen DuckDNS subdomain, in the Caddyfile.
+```bash
+nano ~/Caddy/Caddyfile
+```
+Now hit ```Ctrl + x``` then ```y``` then ```Enter```
+
+Finally start Caddy and visit your Torrentio-sh instance at ```yoursubdomain.duckdns.org```
+
+Great job for making it through the whole guide.  
+# 🎉 Happy streaming 🎉
