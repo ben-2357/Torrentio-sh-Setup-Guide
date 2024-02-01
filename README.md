@@ -1,11 +1,11 @@
 ## Welcome to the beginner friendly [Torrentio-sh](https://github.com/Gabisonfire/torrentio-scraper-sh) setup guide
 
 You will need the following prerequisites:
- 1. Linux on a machine (Preferably Ubuntu or Debian based and a server based distribution with ssh enabled). [Here's a great video by TechHut on how to do this.](https://www.youtube.com/watch?v=K2m52F0S2w8) 
+ 1. Linux on a machine (Preferably Ubuntu or Debian based and a server based distribution with ssh enabled). [Here's a great video tutorial by TechHut on how to do this.](https://www.youtube.com/watch?v=K2m52F0S2w8) 
  
- 2. A static local IP on your Linux machine. [Here's a great video on how to do this.](https://www.youtube.com/watch?v=fayx4jWqyWk)
+ 2. A static local IP on your Linux machine. [Here's a great video tutorial.](https://www.youtube.com/watch?v=fayx4jWqyWk)
  
- 3. A [DuckDNS](https://www.duckdns.org/) account with [port 80 and 443 forwarded on your router](https://portforward.com/how-to-port-forward/). ****This is only for remote access outside of your home wifi.****
+ 3. A [DuckDNS](https://www.duckdns.org/) account with ports TCP 80 and  TCP 443 forwarded on your router. [Here's a great video tutorial](https://www.youtube.com/watch?v=B9jH8QPsVOw). ****Note: This is only required for remote access outside of your home wifi.****
  
  4. About 15 minutes (not including Linux install)
 
@@ -66,20 +66,15 @@ docker-compose up -d
 
 ## Make Torrentio-sh open to the internet. (Remote access)
 
-Setup DuckDNS
+### Setup DuckDNS
 
  1. Make a new subdomain on DuckDNS.org.
  2. Click ```install``` in the upper left corner.
  3. Select your newly created domain from step 1 in the drop down box.
- 4. Proceed to copy all commands in order just like you have in this guide.
+ 4. Proceed to copy all commands in order just like you have in this tutorial.
 
-Port forward ports 80 and 443 to your Linux machine
+### Forward ports 80 and 443 to your Linux machine's IP address. 
+[Here's a great video tutorial.](https://www.youtube.com/watch?v=B9jH8QPsVOw)
 
-
-
-
-
-
-
-
-
+### Next setup the reverse proxy. 
+This is what sends Torrentio-sh uses to talk to other devices across the internet. We will use Nginx-Proxy-Manager.
