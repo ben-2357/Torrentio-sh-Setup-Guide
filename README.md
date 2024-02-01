@@ -49,7 +49,7 @@ sudo apt install -y git
 cd ~
 git clone https://github.com/Gabisonfire/torrentio-scraper-sh
 cd torrentio-scraper-sh
-docker-compose up -d
+docker compose up -d
 ```
 You can view your Torrentio-sh instance in a browser at ```http://yourip:7000```
 
