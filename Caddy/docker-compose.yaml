@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   caddy:
-    image: caddy
+    image: caddy:latest
     restart: unless-stopped
     ports:
       - "80:80"
