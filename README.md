@@ -4,7 +4,7 @@
  
  2. A static local IP on your Linux machine. [Here's a great video tutorial.](https://www.youtube.com/watch?v=fayx4jWqyWk)
  
- 3. A [DuckDNS](https://www.duckdns.org/) account with ports TCP 80 and  TCP 443 forwarded on your router. [Here's a great video tutorial](https://www.youtube.com/watch?v=B9jH8QPsVOw). ****Note: This is only required for remote access outside of your home wifi.****
+ 3. A [DuckDNS](https://www.duckdns.org/) account with ports 80 TCP and 443 TCP forwarded on your router. [Here's a great video tutorial](https://www.youtube.com/watch?v=B9jH8QPsVOw). ****Note: This is only required for remote access outside of your home wifi.****
  
  4. About 15-30 minutes excluding the time installing Linux takes 
 
