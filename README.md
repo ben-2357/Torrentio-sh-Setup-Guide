@@ -1,5 +1,3 @@
-
-
 ## [Torrentio-sh](https://github.com/Gabisonfire/torrentio-scraper-sh) prerequisites:
 
  1. Linux on a machine (Preferably Ubuntu or Debian based and a server based distribution with SSH enabled). [Here's a great video tutorial by TechHut on how to do this.](https://www.youtube.com/watch?v=K2m52F0S2w8) 
@@ -10,7 +8,7 @@
  
  4. Patience lol
 
-## Install Docker (copy and paste the commands)
+### ⚠️ BE SURE TO COPY AND PASTE THE BLOCKS OF COMMANDS 1 BLOCK AT A TIME AND WAIT BEFORE EACH ONE IS DONE BEFORE STARTING ANOTHER ⚠️
 
 Add the Docker apt repository
 
@@ -101,7 +99,3 @@ docker compose up -d
 
  Great job for making it through the whole guide.  
 # 🎉 Happy streaming 🎉
-
-
-
-
