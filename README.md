@@ -1,3 +1,5 @@
+
+
 ## [Torrentio-sh](https://github.com/Gabisonfire/torrentio-scraper-sh) prerequisites:
 
  1. Linux on a machine (Preferably Ubuntu or Debian based and a server based distribution with SSH enabled). [Here's a great video tutorial by TechHut on how to do this.](https://www.youtube.com/watch?v=K2m52F0S2w8) 
@@ -91,7 +93,15 @@ nano ~/Caddy/Caddyfile
 ```
 Now hit `Ctrl + x` then `y` then `enter`
 
-Finally start Caddy and visit your Torrentio-sh instance at `yoursubdomain.duckdns.org`.
+Finally start Caddy and visit your Torrentio-sh instance at `yoursubdomain.duckdns.org`:
+```bash
+cd ~/Caddy
+docker compose up -d
+```
 
  Great job for making it through the whole guide.  
 # 🎉 Happy streaming 🎉
+
+
+
+
