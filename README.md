@@ -2,7 +2,7 @@
 
  1. Linux on a machine (Preferably Ubuntu or Debian based and a server based distribution with SSH enabled). [Here's a great video tutorial by TechHut on how to do this.](https://www.youtube.com/watch?v=K2m52F0S2w8) 
  
- 2. A static local IP on your Linux machine. [Here's a great video tutorial.](https://www.youtube.com/watch?v=fayx4jWqyWk) (your router's IP is usually `https://192.168.0.1` or `https://192.168.1.1`)
+ 2. A static local IP on your Linux machine. [Here's a great video tutorial.](https://www.youtube.com/watch?v=fayx4jWqyWk) (your router's IP is usually `http://192.168.0.1` or `http://192.168.1.1`)
  
  3. A [DuckDNS](https://www.duckdns.org/) account with ports 80 TCP and 443 TCP forwarded on your router. [Here's a great video tutorial](https://www.youtube.com/watch?v=B9jH8QPsVOw). ****Note: This is only required for remote access outside of your home wifi.****
  
