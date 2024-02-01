@@ -64,7 +64,7 @@ docker run -d \
   containrrr/watchtower
 ```
 
-## Make Torrentio-sh open to the internet. (Remote access)
+## Make Torrentio-sh open to the internet. (External access)
 
 ### Setup DuckDNS
 
