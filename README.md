@@ -55,15 +55,15 @@ You can view your Torrentio-sh instance in a browser at ```http://yourip:7000```
 
 You can view your machine's IP with ```ifconfig```  or ```ip a```  
 
-## Updating Torrentio-sh (Releasing script for this soon)
+## Enable auto update
 
-You can update Torrentio-sh install by running these commands
+You can enable auto update for your Torrentio-sh instance by running these commands
 
 ```bash
-cd ~/torrentio-scraper-sh
-docker-compose down
-git pull
-docker-compose up -d
+docker run -d \
+  --name watchtower \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  containrrr/watchtower
 ```
 
 ## Make Torrentio-sh open to the internet. (Remote access)
@@ -96,5 +96,5 @@ Now hit ```Ctrl + x``` then ```y``` then ```Enter```
 
 Finally start Caddy and visit your Torrentio-sh instance at ```yoursubdomain.duckdns.org```
 
-Great job for making it through the whole guide.  
+ Great job for making it through the whole guide.  
 # 🎉 Happy streaming 🎉
