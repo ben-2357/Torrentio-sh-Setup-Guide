@@ -1,3 +1,5 @@
+
+
 ## [Torrentio-sh](https://github.com/Gabisonfire/torrentio-scraper-sh) prerequisites:
 
  1. Linux on a machine (Preferably Ubuntu or Debian based and a server based distribution with ssh enabled). [Here's a great video tutorial by TechHut on how to do this.](https://www.youtube.com/watch?v=K2m52F0S2w8) 
@@ -26,7 +28,7 @@ sudo apt-get update
 ```
 Install Docker
 ```bash
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-compose
 ```
 Now add your user to the docker group or see the [post-installation](https://docs.docker.com/engine/install/linux-postinstall/) step on Docker's website
 ```bash
@@ -77,22 +79,12 @@ docker-compose up -d
 [Here's a great video tutorial.](https://www.youtube.com/watch?v=B9jH8QPsVOw)
 
 ### Next setup the reverse proxy. 
-This is what sends Torrentio-sh uses to talk to other devices across the internet. We will use Nginx-Proxy-Manager.
+This is what sends Torrentio-sh uses to talk to other devices across the internet. We will use Caddy.
 
-Start by downloading the Nginx Proxy Manager docker-compose.yaml file and starting the stack
+Start by downloading the caddy docker-compose.yaml file and starting the stack
 ```bash
 cd ~
-mkdir nginx-proxy-manager
-cd nginx-proxy-manager
-wget https://raw.githubusercontent.com/ben-2357/Torrentio-sh-Setup-Guide/main/docker-compose.yaml
+mkdir caddy
+cd caddy
+wget 
 ```
-Access the Nginx Proxy Manager dashboard at ```https://yourip:81```
-
-The default username and password is:
-```
-Email: admin@example.com
-Password: changeme
-```
-Set new login credentials then go to the  ```Proxy Hosts``` tab to create a new proxy host.
-
-Select ```Add a proxy host``` and put your DuckDNS subdomain in the domain box. Example: torrentiosh.duckdns.org
