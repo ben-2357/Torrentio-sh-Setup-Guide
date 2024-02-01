@@ -29,7 +29,7 @@ Install Docker:
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-compose
 ```
-Now add your user to the `docker` group or see the [post-installation](https://docs.docker.com/engine/install/linux-postinstall/) step on Docker's website:
+Add your user to the `docker` group or see the [post-installation](https://docs.docker.com/engine/install/linux-postinstall/) step on Docker's website:
 ```bash
 sudo groupadd docker
 sudo usermod -aG docker $USER
