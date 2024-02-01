@@ -1,4 +1,4 @@
-## [Torrentio-sh prerequisits](https://github.com/Gabisonfire/torrentio-scraper-sh) setup guide
+## [Torrentio-sh](https://github.com/Gabisonfire/torrentio-scraper-sh) prerequisites
 
 You will need the following prerequisites:
  1. Linux on a machine (Preferably Ubuntu or Debian based and a server based distribution with ssh enabled). [Here's a great video tutorial by TechHut on how to do this.](https://www.youtube.com/watch?v=K2m52F0S2w8) 
