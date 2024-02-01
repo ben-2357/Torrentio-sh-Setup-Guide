@@ -7,7 +7,7 @@ You will need the following prerequisites:
  
  3. A [DuckDNS](https://www.duckdns.org/) account with ports TCP 80 and  TCP 443 forwarded on your router. [Here's a great video tutorial](https://www.youtube.com/watch?v=B9jH8QPsVOw). ****Note: This is only required for remote access outside of your home wifi.****
  
- 4. About 15 minutes (not including Linux install)
+ 4. About 15-30 minutes excluding the time installing Linux takes 
 
 ## Install Docker (simply copy and paste the commands)
 
@@ -51,7 +51,8 @@ cd torrentio-scraper-sh
 docker-compose up -d
 ```
 You can view your Torrentio-sh instance in a browser at ```http://yourip:7000```
-You can find what your machine's IP is with ```ifconfig```  or ```ip a```  
+
+You can view your machine's IP with ```ifconfig```  or ```ip a```  
 
 ## Updating Torrentio-sh (Releasing script for this soon)
 
@@ -78,3 +79,21 @@ docker-compose up -d
 
 ### Next setup the reverse proxy. 
 This is what sends Torrentio-sh uses to talk to other devices across the internet. We will use Nginx-Proxy-Manager.
+
+Start by downloading the Nginx Proxy Manager docker-compose.yaml file and starting the stack
+```bash
+cd ~
+mkdir nginx-proxy-manager
+cd nginx-proxy-manager
+wget https://raw.githubusercontent.com/ben-2357/Torrentio-sh-Setup-Guide/main/docker-compose.yaml
+```
+Access the Nginx Proxy Manager dashboard at ```https://yourip:81```
+
+The default username and password is:
+```
+Email: admin@example.com
+Password: changeme
+```
+Set new login credentials then go to the  ```Proxy Hosts``` tab to create a new proxy host.
+
+Select ```Add a proxy host``` and put your DuckDNS subdomain in the domain box. Example: torrentiosh.duckdns.org
