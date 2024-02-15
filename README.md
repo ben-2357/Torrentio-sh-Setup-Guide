@@ -1,4 +1,4 @@
-# 🚨 This guide is deprecated. Please visit (this)[https://github.com/Gabisonfire/knightcrawler] repository to setup KnightCrawler. 🚨
+# 🚨 This guide is deprecated. Please visit [this](https://github.com/Gabisonfire/knightcrawler) repository to setup KnightCrawler. 🚨
 ## [Torrentio-sh](https://github.com/Gabisonfire/torrentio-scraper-sh) prerequisites:
 
  1. Linux on a machine (Preferably Ubuntu or Debian based and a server based distribution with SSH enabled). [Here's a great video tutorial by TechHut on how to do this.](https://www.youtube.com/watch?v=K2m52F0S2w8) 
